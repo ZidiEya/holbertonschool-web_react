@@ -1,0 +1,61 @@
+:root {
+  /* Définition d’une variable CSS pour la couleur rouge Holberton */
+  --holberton-red: #e1484c;
+}
+
+body {
+  /* Le contenu de la page ne dépasse pas 90% de la largeur */
+  max-width: 90%;
+  /* Centrage horizontal de la page */
+  margin: 0 auto;
+}
+
+div {
+  /* Espacement intérieur pour tous les div */
+  padding: 2px 8px;
+}
+
+.App {
+  /* Conteneur principal */
+  position: relative;
+  /* Hauteur minimale : toute la hauteur de l’écran */
+  min-height: 100vh;
+}
+
+.App-header {
+  /* En-tête affiché en flexbox (alignement horizontal) */
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+  /* Ligne rouge sous l’en-tête */
+  border-bottom: 3px solid var(--holberton-red);
+}
+
+.App-header h1 {
+  /* Décalage automatique sauf à gauche (0) */
+  margin: auto auto auto 0;
+  /* Titre coloré en rouge Holberton */
+  color: var(--holberton-red);
+}
+
+.App-body p {
+  /* Paragraphe du corps avec marges spécifiques */
+  margin: 48px 0 0 32px;
+}
+
+.App-footer {
+  /* Pied de page fixé en bas */
+  position: absolute;
+  bottom: 0;
+  /* Le footer occupe toute la largeur */
+  width: 100%;
+}
+
+.App-footer p {
+  /* Texte centré horizontalement */
+  text-align: center;
+  /* Ligne rouge au-dessus du footer */
+  border-top: 3px solid var(--holberton-red);
+  /* Espacement vertical du contenu */
+  padding: 16px 0;
+}
